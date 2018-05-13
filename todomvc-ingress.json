@@ -1,24 +1,24 @@
 {
-  apiVersion: "extensions/v1beta1",
-  kind: "Ingress",
-  metadata: {
-    name: "todomvc-ingress"
+  "apiVersion": "extensions/v1beta1",
+  "kind": "Ingress",
+  "metadata": {
+    "name": "todomvc-ingress"
   },
-  spec: {
-    backend: {
-      serviceName: "todomvc-service",
-      servicePort: 80
+  "spec": {
+    "backend": {
+      "serviceName": "todomvc-service",
+      "servicePort": 80
     },
-    rules: [
+    "rules": [
       {
-        http: {
-          paths: [
+        "http": {
+          "paths": [
             {
-              backend: {
-                serviceName: "todomvc-service",
-                servicePort: 80
+              "backend": {
+                "serviceName": "todomvc-service",
+                "servicePort": 80
               },
-              path: "/todomvc"
+              "path": "/todomvc"
             }
           ]
         }
